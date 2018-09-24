@@ -6,10 +6,32 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
     <script src="assets/java/java.js"></script>
 </head>
 <body>
-    
+    <h2 id = "header">Train Times</h2>
+    <div id = "boxOne">
+        <table id = "aTable">
+            <tr id = "nameRow"><p></p>
+                <td>Train Name</td>
+                <td>Destination</td>
+                <td>Frequency</td>
+                <td>Train Start</td>
+                <td>Minutes Away</td>
+            </tr>
+        </table>
+    </div>
+    <div id = "boxTwo">
+        <form><p>Enter Train Info</p>
+            <hr>
+            <input type = "input" placeholder="Train Name" id = "nameInput" >
+            <input type = "input" placeholder="Destination" id = "destInput">
+            <input type = "input" placeholder="First Train Time(military time)" id = "timeInput">
+            <input type = "input" placeholder="Frequency" id = "freqInput">
+            <input type = "submit" id = "fml">
+        </form>
+    </div>
 </body>
 </html>
